@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legimus 2.0 Explore</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9877bc6c1f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Start of hidden menu -->
+    <div class="sidenav" id="sideNav">
+      <a href="javascript:void(0)" class="sidenav__close">
+        <i class="fas fa-times"></i>
+      </a>
+      <nav class="sidenav__nav">
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Library</a>
+        <a href="#">Book Lists</a>
+        <a href="#">Categories</a>
+        <a href="#">Settings</a>
+      </nav>
+    </div>
+    <!-- End of hidden menu -->
+    <header class="header">
+      <div class="header-logo">
+        <a href="/index.html">
+          <h1 class="logo">Legimus</h1>
+        </a>
+      </div>
+      <div class="header__icons">
+        <i class="fas fa-search"></i>
+        <a href="#">
+          <i class="far fa-user-circle"></i>
+        </a>
+        <!-- Opens the hidden nav -->
+        <i class="fas fa-bars sidenav__open"></i>
+      </div>
+    </header>
+    <!-- MODAL -->
+    <div class="modal">
+      <div class="modal__container">
+        <a href="javascript:void(0)" class="modal__container--close">
+          <i class="fas fa-times"></i>
+        </a>
+        <div class="modal__card">
+          <div class="modal__card--img">
+            <img
+              src="./images/rainbow-rowell.jpg"
+              alt="Carry on by Rainbow Rowell"
+            />
+          </div>
+          <div class="modal__card--txt">
+            <p>Carry On</p>
+            <p>Rainbow Rowell</p>
+          </div>
+          <button class="btn">Add to Library</button>
+        </div>
+      </div>
+    </div>
+    <!-- BOOK RECOMMENDATIONS -->
+    <main class="container">
+      <h2 class="container__title">Recommended for you</h2>
+      <section class="gallery">
+        <div class="card modal-btn">
+          <img
+            src="./images/rainbow-rowell.jpg"
+            alt="Carry on by Rainbow Rowell"
+            class="card__img"
+          />
+          <div class="card__txt">
+            <h3 class="card__txt--title">Carry On</h3>
+            <p class="card__txt--author">Rainbow Rowell</p>
+          </div>
+        </div>
+        <div class="card modal-btn">
+          <img
+            src="./images/emilychang.jpg"
+            alt="Brotopia by Emily Chang"
+            class="card__img"
+          />
+          <div class="card__txt">
+            <h3 class="card__txt--title">Brotopia</h3>
+            <p class="card__txt--author">Emily Chang</p>
+          </div>
+        </div>
+        <div class="card modal-btn">
+          <img
+            src="./images/marekandre.webp"
+            alt="Bestiarium by Mare Kandre"
+            class="card__img"
+          />
+          <div class="card__txt">
+            <h3 class="card__txt--title">Bestiarium</h3>
+            <p class="card__txt--author">Mare Kandre</p>
+          </div>
+        </div>
+        <div class="card modal-btn">
+          <img
+            src="./images/sarawachterboettcher.jpg"
+            alt="Technically Wrong by Sara Wachter-Boettcher"
+            class="card__img"
+          />
+          <div class="card__txt">
+            <h3 class="card__txt--title">Technically Wrong</h3>
+            <p class="card__txt--author">Sara Wachter-Boettcher</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
